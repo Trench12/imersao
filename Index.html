@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante | Seu lugar aqui</title>
+    <link rel="stylesheet" href="Styles/Styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="./Icons/cheese-burger.png">
+                <a><h1>Burguer <h2>na</h2> Chapa</a>
+            </div>
+            <div class="menu">
+                <h5>Menu</h5>
+                <ul>
+                    <li>
+                        <img src="./Icons/house.png"/>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <img src="./Icons/menu (3).png"/>
+                        <a href="#">CARDÁPIOS</a>
+                    </li>
+                    <li>
+                        <img src="./Icons/order.png">
+                        <a href="#">PEDIDOS</a></li>
+                    <li>
+                        <img src="./Icons/trolley (1).png"/>
+                        <a href="#">CARRINHO</a>
+                    </li>
+                    <li>
+                        <img src="./Icons/man.png"/>
+                        <a href="#">PERFIL</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="content">
+            <header>
+                <a href="#" onclick="abrirwpp()"><img class="wpp" src="Icons/whatsapp (4).png"/></a>
+                <a href="#" onclick="abririnsta()"><img class="insta" src="Icons/social.png"/></a>
+                <a href="#" onclick="abrirface()"><img class="face" src="Icons/facebook.png"/></a>
+                <div class="pesq">
+                    <button onclick="btnPesq()"><img src="./Icons/search (3).png"/></button>
+                    <input type="text" name="" id="campo-pesq" placeholder="search">
+                </div>
+            </header>
+            <div class="center">
+                <div id="alimentos">
+                    <!--<div id="item">
+                        <ul>
+                            <li>
+                                <img src="./Icons/images (1).jpeg"/>
+                                <div class="info">
+                                    <a id="title">X-Picanha</a>
+                                    <a id="Ingredientes">Hamburguer 200gr de picanha, cebola, tomate, 100gr de queijo ,pão de brioche. </a>
+                                    <a id="valor">R$ 35,00</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="icon-container">
+            <button>
+                <img src="./Icons/trolley.png"/> 
+                Carrinho 
+                <span class="notify"> 1</span></button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./JS/Dados.js"></script>
+    <script src="./JS/App.JS"></script>
+</body>
+</html>

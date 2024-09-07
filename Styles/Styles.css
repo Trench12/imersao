@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: "Poppins", "sans-serif";
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+html,
+body{
+    background-color: orange;
+}
+
+.container .sidebar .logo img{
+    color:#fff;
+    cursor:pointer;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    margin-left: 10px;
+    width: 30%;
+
+}
+
+.container .sidebar .logo img:hover{
+    color:#fff;
+    cursor:pointer;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    margin-left: 10px;
+    width: 30%;
+    transform: rotate(15deg);
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+
+
+.container .sidebar .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    background-color: orange;   
+    width: 100%;
+    max-width: 200px;
+    padding: 2px 5px;
+    border-top-left-radius:10px;
+    cursor: pointer;
+}
+
+.container .sidebar .logo a{
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    transition:  all 0.3s ease;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.container .sidebar .logo:hover{
+    color: rgb(35, 40, 45);
+}
+.container .sidebar .menu{
+    background-color: rgb(35,40,45);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 96%;
+    border-bottom-left-radius: 8px;
+    max-width: 200px;
+}
+h2{
+    font-size: 0.7rem;
+}
+
+h1{
+    font-size: 1rem;
+}
+.container .sidebar .menu ul{
+    list-style: none;
+}
+
+.container .sidebar .menu ul li{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+
+.container .sidebar .menu ul li:hover,
+.container .sidebar .menu ul li a:hover{
+    letter-spacing: 2px;
+    color: chocolate;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.container .sidebar .menu ul li a{
+
+}
+
+.container .sidebar .menu h5{
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    color: chocolate;
+    margin-left:   25%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.container .sidebar{
+    top:0;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px; /* Sidebar com largura de 20% da tela */
+    min-width: 80px;
+    height: 95vh;
+    padding: 10px 15px;
+    background-color: chocolate;
+}
+
+.content {
+    width: 100%; /* O conteúdo vai ocupar 80% da tela */
+    height: 95vh;
+    background-color: chocolate;
+    padding-top:10px ;
+    padding-right:15px ;
+    padding-bottom:8px ;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    min-width: 30px;
+    background-color:orange;
+    margin-top: 1px;
+    border-top-right-radius: 8px;
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+}
+
+header .wpp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 3px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    width: 50px;
+    height: 50px;
+    border:0;
+    border-radius: 50%;
+}
+
+header .wpp{
+    border-radius: 50%;
+}
+
+header .wpp:hover{
+    box-shadow: 0 0 10px chartreuse;
+    cursor: pointer;
+}
+
+
+header .insta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 3px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    width: 50px;
+    height: 50px;
+    border:0;
+    border-radius: 50%;
+}
+
+header .insta{
+    border-radius: 50%;
+}
+
+header .insta:hover{
+    box-shadow: 0 0 10px crimson;
+    cursor: pointer;
+}
+
+
+header .face{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin-top: 8px;
+    margin-left: 3px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    width: 50px;
+    height: 50px;
+    border:0;
+    border-radius: 50%;
+}
+
+header .face{
+    border-radius: 50%;
+}
+
+header .face:hover{
+    box-shadow: 0 0 10px cornflowerblue;
+    cursor: pointer;
+}
+
+header .pesq {
+    background-color: rgb(35, 40, 45);
+    margin-top: 8px;
+    min-width: 130px;
+    height: 60%;
+    margin-right: 10px;
+    margin-left: auto; /* Empurra o .pesq para o canto direito */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header .pesq img{
+    width: 30px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 2px;
+    margin-left: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button
+{
+    margin-top: 2px;
+    border:0;
+    background-color: transparent;
+}
+
+input{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 80%;
+    min-width: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.center {
+    width: 100%;
+    min-width: 350px;
+    height: calc(100% - 70px - 3px); /* Altura total menos o header e margem */
+    background-color: rgb(35, 40, 45);
+    border-bottom-right-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.categoria{
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+#alimentos
+{
+    border: 10px solid rgb(35, 40, 45);
+    background-color: orange;
+    box-shadow: 0 0 10px orange;
+    width: 100%;
+    height: 100% auto;
+    min-width: 20%;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+#alimentos #item 
+{
+    background-color: chocolate;
+    height: 110px;
+    max-width: 300px;
+    min-width: 230px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#alimentos #item:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+
+#alimentos #item ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+}
+
+#alimentos #item ul li img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+
+#alimentos #item ul li a{
+    display: block;
+    text-decoration: none;
+}
+
+#title {
+    font-weight: bold;
+    margin-bottom: 5px; /* Espaço entre o título e o próximo item */
+    font-size: 15px;
+    color: black;
+}
+
+#Ingredientes {
+    margin-bottom: 5px; /* Espaço entre os ingredientes e o valor */
+    font-size: 10px;
+    color: white;
+}
+
+#valor {
+    font-weight: bold;
+    color: green;
+    font-size: 13px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+/* Aqui está o ajuste importante */
+#alimentos #item ul li{
+    display: flex;
+    align-items: center;
+}
+
+#alimentos #item ul li .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Adiciona uma mídia query para telas menores */
+@media (max-width:768px) {
+    .container .content .center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 150px;
+    }
+    #alimentos{
+        display: flex; /* Exibe os itens em bloco, empilhando-os verticalmente */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #alimentos #item{
+        height: 120px;
+    }
+    .container .sidebar{
+        width: 20px;
+    }
+    .container .sidebar .menu h5{
+        visibility: hidden;
+    }
+    .container .sidebar .logo{
+        width: 50px;
+    }
+    .container .sidebar .logo img{
+        width: 26px;
+    }
+    .container .sidebar .logo a{
+        visibility: hidden;
+    }
+
+    .container .sidebar .logo h1{
+        visibility: hidden;
+    }
+
+    .container .sidebar .logo h2{
+        visibility: hidden;
+    }
+    .container .sidebar .menu a{
+        visibility: hidden;
+    }
+
+    .container .sidebar .menu {
+        width: 50px;
+        transition: all 2s;
+    }
+
+    .container .content{
+        width: 90%;
+    }
+
+    .container{
+        display: flex;
+
+    }
+
+    .pesq{
+
+    }
+    #alimentos #item{
+        width: 230px;
+        height: 150px;
+    }
+    
+    #alimentos{
+        width: 100%;
+        border: 0;
+        box-shadow: none;
+    }
+
+    header{
+        width: 280px;
+    }
+
+    .container{
+        width: 400px;
+    }
+
+    .center{
+        width: 90%;
+    }
+
+    header .wpp{
+        width: 40px;
+        height: 40px;
+    }
+    
+    header .insta{
+        width: 40px;
+        height: 40px;
+    }
+
+    header .face{
+        width: 40px;
+        height: 40px;
+    }
+
+    footer{
+        margin-bottom: 30px;
+    }
+
+}
+
+/* A mídia query para telas maiores pode permanecer como está */
+@media (min-width: 769px) {
+    #alimentos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #alimentos #item ul li{
+        flex-direction: row;
+    }
+}
+
+footer{
+    width: 100%;
+    height: 20%;
+    background-color: orange;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.container footer button{
+    border: 0;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", "sans-serif";
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+ .notify{
+    position: absolute; /* Posiciona o span em relação ao ícone */
+    top: -8px; /* Ajuste a posição vertical */
+    right: -8px; /* Ajuste a posição horizontal */
+    background-color: red; /* Cor de fundo do contador */
+    color: white; /* Cor do texto */
+    border-radius: 50%; /* Faz o contador ficar redondo */
+    width: 18px; /* Largura do contador */
+    height: 18px; /* Altura do contador */
+    font-size: 12px; /* Tamanho da fonte */
+    display: flex; /* Para centralizar o texto dentro do span */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Alinhamento horizontal */
+    border: 2px solid white; /* Borda branca ao redor do contador (opcional) */
+}
+.container button img{
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
+.container footer button img{
+    height: 30%;
+    margin: 5px;
+}
+.icon-container {
+    position: relative; /* Define o contexto para posicionamento absoluto do span */
+    display: inline-block; /* Para o botão e o span ficarem alinhados corretamente */
+}
+
+#alimentos p{
+    height: 200px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: red;
+}
+
+
